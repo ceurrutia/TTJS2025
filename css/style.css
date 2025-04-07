@@ -1,0 +1,241 @@
+/* typo */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Underdog&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(61, 3, 58);
+    color: #d4d1d4;
+    font-family: 'Underdog', Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+
+h1 {
+    font-size: 2.3rem;
+    text-align: center;
+    margin: 10px;
+}
+
+h2,
+h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 10px;
+}
+
+p {
+    padding: 5px;
+}
+
+main p,
+main dt,
+main dd {
+    padding: 0 20px;
+}
+
+p a {
+    color: #a8a8a8;
+}
+
+p a:hover {
+    color: aquamarine
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    margin-top: 20px;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #f3f3f3;
+    font-family: monospace;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: aquamarine;
+}
+
+
+main {
+    min-height: 500px;
+    width: 100%;
+}
+
+/**** CARDS ****/
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columnas iguales */
+    gap: 20px;
+    /* Espacio entre las tarjetas */
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: aquamarine;
+    color: rgb(53, 53, 53);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: rgb(121, 214, 183);
+}
+
+
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/******* footer *******/
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #252525;
+    margin-top: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-column:first-child {
+    margin-right: 20px;
+
+}
+
+.footer-logo {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: aquamarine;
+    color: rgb(59, 59, 59);
+    padding: 10px 15px;
+    font-family: 'Underdog', Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+form button a:hover {
+    background-color: rgb(56, 56, 56);
+    color: whitesmoke;
+}
+
+hr {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.footer-copyright {
+    width: 100%;
+    text-align: center;
+}
+
+/****** BADGES ******/
+.badge {
+    display: inline-block;
+    padding: 0.50em 1em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    margin-bottom: 10px;
+}
+
+.badge-manga {
+    color: #d6dde4;
+    background-color: #849b1c;
+}
+
+.badge-anime {
+    color: #d6dde4;
+    background-color: #8d0e7c;
+}
