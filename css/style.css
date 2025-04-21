@@ -32,7 +32,10 @@ p {
     padding: 5px;
 }
 
-main p,
+main p {
+    padding: 0;
+}
+
 main dt,
 main dd {
     padding: 0 20px;
@@ -52,20 +55,21 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    background-color: #222;
+    /* opcional, solo si querés ver mejor los items */
 }
 
 .nav-logo {
     font-size: 1.5em;
+    color: #f3f3f3;
 }
 
 nav ul {
     list-style: none;
-    display: flex-end;
+    display: flex;
     align-items: center;
     margin: 0;
     padding: 0;
-    width: 90%;
-    margin-top: 20px;
 }
 
 nav li {
@@ -84,6 +88,45 @@ nav a:hover {
     color: aquamarine;
 }
 
+/* mediaquerys */
+
+.nav-toggle {
+    display: none;
+    font-size: 2rem;
+    color: #f3f3f3;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #222;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    nav li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        position: relative;
+    }
+}
 
 main {
     min-height: 500px;

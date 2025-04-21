@@ -18,8 +18,15 @@
 <body>
     <header>
         <nav>
-            <a href="index.html" class="nav-logo"><img src="./images/logo.png" width="150" alt="Meridiano 0"></a>
-            <ul>
+            <div class="nav-logo"><a href="index.html" class="nav-logo"><img src="./images/logo.png" width="150"
+                        alt="Meridiano 0"></a></div>
+
+            <!-- Hamburguesa toogle-->
+            <div class="nav-toggle" id="navToggle">
+                ☰
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Manga</a></li>
                 <li><a href="#">Anime</a></li>
@@ -32,17 +39,19 @@
     <main>
 
         <h1> New Arrivals 2025</h1>
+        <h2>Buy now </h2>
 
-        <!-- This is the content of the min tag  -->
+        <!-- This is the content  -->
 
         <section class="card-grid">
             <div class="card">
                 <img src="https://media.tycsports.com/files/2024/07/04/737792/kimetsu-no-yaiba-tendra-una-quinta-temporada-dividida-en-tres-peliculat_640x640.webp"
                     alt="Imagen 1" class="card-img-top">
                 <div class="card-body">
-                    <h5 class="card-title">Kimetsu No Yaiba - Infinity Castle</h5>
-                    <span class="badge badge-manga">Manga</span>
-                    <p class="card-text">Movie 1</p>
+                    <h5 class="card-title">Kimetsu No Yaiba - Infinity Castle Movie I</h5>
+                    <span class="badge badge-anime">Anime</span>
+                    <p class="card-text">The Demon Slayer Corps plunge into Infinity Castle to defeat Muzan. However,
+                        the remaining Hashira and the Demon Slayers who survived Tanjiro's Final Selection</p>
                     <a href="#" class="btn btn-primary">Buy now</a>
                 </div>
             </div>
@@ -52,7 +61,10 @@
                 <div class="card-body">
                     <h5 class="card-title">Chainsawman</h5>
                     <span class="badge badge-manga">Manga</span>
-                    <p class="card-text">September in Japan</p>
+                    <p class="card-text">Chainsaw Man follows the story of Denji, an impoverished teenager who makes a
+                        contract that fuses his body with that of Pochita, the dog-like Chainsaw Devil.</p>
+                    <p>September in Japan</p>
+                    <br>
                     <a href="#" class="btn btn-primary">Buy now</a>
                 </div>
             </div>
@@ -83,7 +95,7 @@
             <form action="https://formspree.io/f/mjkyowag" method="POST">
                 <label>
                     Your email:
-                    <input type="email" name="email">
+                    <input type="email" name="email" crossorigin="anonymous" referrerpolicy="no-referrer">
                 </label>
                 <label>
                     Your message:
@@ -98,7 +110,6 @@
         <div class="footer-copyright">
             <p>Copyright Urrutia | Talento Tech 2025</p>
             <p id="fecha-actual"></p>
-
 
         </div>
     </footer>
