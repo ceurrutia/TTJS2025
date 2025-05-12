@@ -10,7 +10,7 @@
 
 body {
     background-color: rgb(61, 3, 58);
-    color: #d4d1d4;
+    color: #faf8fa;
     font-family: 'Underdog', Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
 }
@@ -56,7 +56,7 @@ nav {
     justify-content: space-between;
     padding: 0 20px;
     background-color: #222;
-    /* opcional, solo si querés ver mejor los items */
+    cursor: pointer;
 }
 
 .nav-logo {
@@ -137,18 +137,24 @@ main {
 
 .card-grid {
     display: grid;
+    /* 3 columnas */
+    /* 1fr, 1fr, 1fr */
     grid-template-columns: repeat(3, 1fr);
-    /* 3 columnas iguales */
     gap: 20px;
-    /* Espacio entre las tarjetas */
     padding: 20px;
+
 }
 
 .card {
     border: 1px solid #ddd;
-    border-radius: 5px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    color: #222;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    margin-top: 5px;
 }
 
 .card-img-top {
@@ -178,10 +184,14 @@ main {
     color: rgb(53, 53, 53);
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Underdog', Arial, Helvetica, sans-serif;
 }
 
 .btn:hover {
-    background-color: rgb(121, 214, 183);
+    background-color: rgb(34, 34, 34);
+    color: #ddd;
 }
 
 
@@ -249,10 +259,6 @@ form button a:hover {
     color: whitesmoke;
 }
 
-hr {
-    width: 100%;
-    margin: 20px 0;
-}
 
 .footer-copyright {
     width: 100%;
@@ -274,11 +280,43 @@ hr {
 }
 
 .badge-manga {
-    color: #d6dde4;
-    background-color: #849b1c;
+    color: #303030;
+    background-color: rgb(228, 199, 36);
 }
 
 .badge-anime {
     color: #d6dde4;
     background-color: #8d0e7c;
+}
+
+/* boton go top del footer */
+
+.up-to-top {
+
+    color: white;
+    font-family: 'Underdog';
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+.up-to-top:hover {
+    color: aquamarine;
+}
+
+/* carrito */
+#cartCount {
+    position: absolute;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container {
+    background-color: #faf8fa;
+    color: #222;
+    margin-bottom: 20px;
+    font-family: 'Underdog', Arial, Helvetica, sans-serif;
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meridiano 0 - TalentoTech JS 2025 </title>
+    <title>Meridiano 0 - Manga & Anime </title>
 
     <!-- CSS Custom-->
     <link rel="stylesheet" href="./css/style.css">
@@ -32,11 +32,17 @@
                 <li><a href="#">Anime</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <!-- Carrito de compra -->
+            <div class="nav-cart">
+                <i class="fas fa-shopping-cart" id="cartIcon"></i>
+                <span id="cartCount">0</span>
+            </div>
         </nav>
 
     </header>
 
     <main>
+        <div id="top"></div>
 
         <h1> New Arrivals 2025</h1>
         <h2>Buy now </h2>
@@ -52,7 +58,8 @@
                     <span class="badge badge-anime">Anime</span>
                     <p class="card-text">The Demon Slayer Corps plunge into Infinity Castle to defeat Muzan. However,
                         the remaining Hashira and the Demon Slayers who survived Tanjiro's Final Selection</p>
-                    <a href="#" class="btn btn-primary">Buy now</a>
+                    <p class="card-text">Price: 15.99</p>
+                    <button class="btn btn-primary" data-price="15.99">Add to Cart</button>
                 </div>
             </div>
             <div class="card">
@@ -65,9 +72,27 @@
                         contract that fuses his body with that of Pochita, the dog-like Chainsaw Devil.</p>
                     <p>September in Japan</p>
                     <br>
-                    <a href="#" class="btn btn-primary">Buy now</a>
+                    <p class="card-text">Price: 19.99</p>
+                    <button class="btn btn-primary" data-price="19.99">Add to Cart</button>
+
                 </div>
             </div>
+            <div class="card">
+                <img src="https://es.web.img3.acsta.net/pictures/19/09/16/17/09/4903250.jpg" alt="Imagen 2"
+                    class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Vinland Saga</h5>
+                    <span class="badge badge-anime">Anime</span>
+                    <p class="card-text">In 1013 AD, the young Thorfinn works for Askeladd in the hopes of challenging
+                        him to a duel and killing him in revenge for his father Thors' death, when they were attacked by
+                        him on a journey to England. </p>
+                    <br>
+                    <p class="card-text">Price: 12.99</p>
+                    <button class="btn btn-primary" data-price="12.99">Add to Cart</button>
+
+                </div>
+            </div>
+
 
         </section>
     </main>
@@ -108,6 +133,7 @@
         <hr>
 
         <div class="footer-copyright">
+            <a href="#top" class="up-to-top">Go to the top</a>
             <p>Copyright Urrutia | Talento Tech 2025</p>
             <p id="fecha-actual"></p>
 
@@ -115,6 +141,9 @@
     </footer>
 
     <script src="js/scripts.js"></script>
+    <script src="js/crud.js"></script>
+    <script src="js/cart.js"></script>
+
 </body>
 
 </html>
