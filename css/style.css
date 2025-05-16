@@ -1,6 +1,7 @@
 /* typo */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Underdog&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     padding: 0;
@@ -11,19 +12,19 @@
 body {
     background-color: rgb(61, 3, 58);
     color: #faf8fa;
-    font-family: 'Underdog', Arial, Helvetica, sans-serif;
-    font-size: 1.1rem;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
 }
 
 h1 {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     text-align: center;
     margin: 10px;
 }
 
 h2,
 h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-align: center;
     margin: 10px;
 }
@@ -67,7 +68,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    align-items: center;
+    align-items: right;
     margin: 0;
     padding: 0;
 }
@@ -174,7 +175,7 @@ main {
 }
 
 .card-text {
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 .btn {
@@ -186,7 +187,7 @@ main {
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
-    font-family: 'Underdog', Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
 .btn:hover {
@@ -247,7 +248,7 @@ form button {
     background-color: aquamarine;
     color: rgb(59, 59, 59);
     padding: 10px 15px;
-    font-family: 'Underdog', Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     cursor: pointer;
     font-weight: bold;
     font-size: 1em;
@@ -294,7 +295,7 @@ form button a:hover {
 .up-to-top {
 
     color: white;
-    font-family: 'Underdog';
+    font-family: 'Montserrat';
     font-size: 1.3rem;
     text-decoration: underline;
 }
@@ -318,5 +319,5 @@ form button a:hover {
     background-color: #faf8fa;
     color: #222;
     margin-bottom: 20px;
-    font-family: 'Underdog', Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
