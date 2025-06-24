@@ -29,6 +29,7 @@ h3 {
     margin: 10px;
 }
 
+
 p {
     padding: 5px;
 }
@@ -136,7 +137,8 @@ main {
 
 /**** CARDS ****/
 
-.card-grid {
+.card-grid,
+.product-detail-container {
     display: grid;
     /* 3 columnas */
     /* 1fr, 1fr, 1fr */
@@ -154,9 +156,6 @@ main {
     overflow: hidden;
 }
 
-.card:hover {
-    margin-top: 5px;
-}
 
 .card-img-top {
     width: 100%;
@@ -169,9 +168,15 @@ main {
     padding: 20px;
 }
 
+.card-body a {
+    color: #252525;
+    text-decoration: none;
+}
+
 .card-title {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    color: #252525;
 }
 
 .card-text {
@@ -196,14 +201,21 @@ main {
 }
 
 
+
 @media (max-width: 768px) {
-    .card-grid {
+
+    .card-grid,
+    .product-detail-container {
         grid-template-columns: 1fr;
     }
 }
 
+
+
+
 /******* footer *******/
-#footer {
+#footer,
+#two-columns {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
