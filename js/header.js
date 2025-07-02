@@ -11,13 +11,13 @@ const header = `
 
             <ul class="nav-menu" id="navMenu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="testimonials.html">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <!-- Carrito de compra -->
-            <div class="nav-cart">
-                <i class="fas fa-shopping-cart" id="cartIcon"></i>
-                <span id="cartCount">0</span>
+                    <div class="nav-cart">
+                    <a href="cart.html" id="goToCartLink"> <i class="fas fa-shopping-cart" id="cartIcon"></i>
+                    <span id="cartCount">0</span></a>
             </div>
         </nav>
 `
